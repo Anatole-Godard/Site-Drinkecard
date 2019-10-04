@@ -1,0 +1,102 @@
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+  max-width: 100vw;
+}
+
+
+.logo{
+  display: block;
+  grid-area: logo;
+  background-color: #16a085;
+}
+
+header {
+	grid-area: header;
+  align-items: center;
+  background-color: #16a085; 
+	width: 83vw;
+	height: 17vh;
+
+
+}
+
+img{
+	max-height: 17vh;
+	max-width: 17vh;
+}
+
+nav{
+	grid-area: menu;
+	text-align:left;
+	font-size: 25px;
+	max-width: 17vw;
+	background-color:#5E6663;
+
+}
+
+nav h1{
+  margin: 0;
+
+padding: 10px;
+
+font-size: 30px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  height: 57vh;
+
+	background-color: #f1f1f1;
+}
+
+li a {
+	display: block;
+	color: #000000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+
+li a:hover {
+	background-color: #16a085;
+	color: white;
+}
+
+
+.item3 { 
+  grid-area: main;
+  text-align: justify;
+  padding: 20px;
+  width: 80vw;
+  background-color: white;
+}
+
+
+footer{ 
+	grid-area: footer; 
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: #16a085;
+  color: white;
+  text-align: center;
+}
+
+
+.grid-container {
+	align-items: stretch;		
+  height: 100vh;
+	display: grid;
+	grid-template: 17vh 73vh 10vh / 17vw 17vw 17vw 17vw 17vw 17vw;
+	grid-template-areas:
+  	'logo header header header header header'
+  	'menu main main main main main'
+  	'footer footer footer footer footer footer';
+
+}
+
+
